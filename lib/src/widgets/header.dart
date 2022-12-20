@@ -70,12 +70,14 @@ class Header extends StatelessWidget {
                       GestureDetector(
                         onTap: () {},
                         child: Container(
+                          alignment: Alignment.center,
                           padding: EdgeInsets.symmetric(horizontal: 5),
                           child: Text(
                             '${CalendarUtils.getPartByString(
                               format: PartFormat.MONTH,
                               options: HeaderOptions.of(context),
-                            )}',
+                            )}a',
+                            textAlign: TextAlign.center,
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 20,
